@@ -309,9 +309,19 @@
         </tr>
 
         <!-- EDTN -->
-        <tr>
+        <tr onmouseout="edtn_stop()" onmouseover="edtn_start()">
           <td width="25%">
-            <img src="media/teaser_edtn.gif" width="160" style="border: 1px solid #ddd;">
+            <div class="one">
+            <div class="two" id="edtn_image">
+            <video width="160" height="160" muted autoplay loop>
+              <source src="media/teaser_edtn.mp4" type="video/mp4">
+            </video></div>
+            <img src="media/teaser_edtn.png" width="160" height="160"></div>
+            <script type="text/javascript">
+            function edtn_start() { document.getElementById('edtn_image').style.opacity = "1"; }
+            function edtn_stop() { document.getElementById('edtn_image').style.opacity = "0"; }
+            edtn_stop()
+            </script>
           </td>
           <td valign="top" width="75%">
               <a href="https://keh0t0.github.io/research/EDTN/">
@@ -338,7 +348,7 @@
         <!-- AnimeCeleb -->
         <tr>
           <td width="25%">
-            <img src="media/preview.jpg" width="160" height="120" style="border: 1px solid #ddd;">
+            <img src="media/teaser_animeceleb.png" width="160" style="border: 1px solid #ddd;">
           </td>
           <td valign="top" width="75%">
               <a href="https://github.com/kangyeolk/AnimeCeleb">
