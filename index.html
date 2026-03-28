@@ -169,14 +169,22 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
         <!-- TexAvatars -->
-        <tr>
+        <tr onmouseout="texavatars_stop()" onmouseover="texavatars_start()">
           <td width="25%">
-            <video width="160" height="160" muted autoplay loop style="border: 1px solid #ddd;">
+            <div class="one">
+            <div class="two" id="texavatars_image">
+            <video width="160" height="160" muted autoplay loop>
               <source src="media/teaser_texavatars.mp4" type="video/mp4">
-            </video>
+            </video></div>
+            <img src="media/preview.jpg" width="160" height="160"></div>
+            <script type="text/javascript">
+            function texavatars_start() { document.getElementById('texavatars_image').style.opacity = "1"; }
+            function texavatars_stop() { document.getElementById('texavatars_image').style.opacity = "0"; }
+            texavatars_stop()
+            </script>
           </td>
           <td valign="top" width="75%">
-              <a href="#">
+              <a href="https://summertight.github.io/TexAvatars/">
                 <papertitle>
                   TexAvatars: Hybrid Texel-3D Representations for Stable Rigging of Photorealistic Gaussian Head Avatars
                 </papertitle>
@@ -190,20 +198,29 @@
           <em>International Conference on 3D Vision (<strong>3DV</strong>)</em>, 2026
             <br>
             <a href="https://arxiv.org/abs/2512.21099">paper</a> |
-            <a href="https://summertight.github.io/TexAvatars/">project page</a>
+            <a href="https://summertight.github.io/TexAvatars/">project page</a> |
+            <a href="bib/texavatars.bib">cite</a>
             <p></p>
           </td>
         </tr>
 
         <!-- SurFhead -->
-        <tr>
+        <tr onmouseout="surfhead_stop()" onmouseover="surfhead_start()">
           <td width="25%">
-            <video width="160" height="160" muted autoplay loop style="border: 1px solid #ddd;">
+            <div class="one">
+            <div class="two" id="surfhead_image">
+            <video width="160" height="160" muted autoplay loop>
               <source src="media/teaser_surfhead.mp4" type="video/mp4">
-            </video>
+            </video></div>
+            <img src="media/preview.jpg" width="160" height="160"></div>
+            <script type="text/javascript">
+            function surfhead_start() { document.getElementById('surfhead_image').style.opacity = "1"; }
+            function surfhead_stop() { document.getElementById('surfhead_image').style.opacity = "0"; }
+            surfhead_stop()
+            </script>
           </td>
           <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/2410.11682v1">
+              <a href="https://summertight.github.io/SurFhead/">
                 <papertitle>
                   SurFhead: Affine Rig Blending for Geometrically Accurate 2D Gaussian Surfel Head Avatars
                 </papertitle>
@@ -221,7 +238,8 @@
           <em>International Conference on Learning Representations (<strong>ICLR</strong>)</em>, 2025
             <br>
             <a href="https://arxiv.org/abs/2410.11682v1">paper</a> |
-            <a href="https://summertight.github.io/SurFhead/">project page</a>
+            <a href="https://summertight.github.io/SurFhead/">project page</a> |
+            <a href="bib/surfhead.bib">cite</a>
             <p></p>
           </td>
         </tr>
@@ -248,17 +266,26 @@
           <em>Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>)</em>, 2024
             <br>
             <a href="https://arxiv.org/abs/2406.11672">paper</a> |
-            <a href="https://junhahyung.github.io/erankgs.github.io/">project page</a>
+            <a href="https://junhahyung.github.io/erankgs.github.io/">project page</a> |
+            <a href="bib/erank.bib">cite</a>
             <p></p>
           </td>
         </tr>
 
         <!-- SelfSwapper -->
-        <tr>
+        <tr onmouseout="selfswapper_stop()" onmouseover="selfswapper_start()">
           <td width="25%">
-            <video width="160" height="160" muted autoplay loop style="border: 1px solid #ddd;">
+            <div class="one">
+            <div class="two" id="selfswapper_image">
+            <video width="160" height="160" muted autoplay loop>
               <source src="media/teaser_selfswapper.mp4" type="video/mp4">
-            </video>
+            </video></div>
+            <img src="media/preview.jpg" width="160" height="160"></div>
+            <script type="text/javascript">
+            function selfswapper_start() { document.getElementById('selfswapper_image').style.opacity = "1"; }
+            function selfswapper_stop() { document.getElementById('selfswapper_image').style.opacity = "0"; }
+            selfswapper_stop()
+            </script>
           </td>
           <td valign="top" width="75%">
               <a href="https://summertight.github.io/selfswapper/">
@@ -275,7 +302,8 @@
           <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2024
             <br>
             <a href="https://arxiv.org/abs/2402.07370">paper</a> |
-            <a href="https://summertight.github.io/selfswapper/">project page</a>
+            <a href="https://summertight.github.io/selfswapper/">project page</a> |
+            <a href="bib/selfswapper.bib">cite</a>
             <p></p>
           </td>
         </tr>
@@ -286,7 +314,7 @@
             <img src="media/teaser_edtn.gif" width="160" style="border: 1px solid #ddd;">
           </td>
           <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/2310.10073">
+              <a href="https://keh0t0.github.io/research/EDTN/">
                 <papertitle>
                   Expression Domain Translation Network for Cross-domain Head Reenactment
                 </papertitle>
@@ -301,7 +329,8 @@
           <em>IEEE International Conference on Acoustics, Speech, and Signal Processing (<strong>ICASSP</strong>)</em>, 2024
             <br>
             <a href="https://arxiv.org/abs/2310.10073">paper</a> |
-            <a href="https://keh0t0.github.io/research/EDTN/">project page</a>
+            <a href="https://keh0t0.github.io/research/EDTN/">project page</a> |
+            <a href="bib/edtn.bib">cite</a>
             <p></p>
           </td>
         </tr>
@@ -328,7 +357,8 @@
           <em>European Conference on Computer Vision (<strong>ECCV</strong>)</em>, 2022
             <br>
             <a href="https://arxiv.org/pdf/2111.07640v2.pdf">paper</a> |
-            <a href="https://github.com/kangyeolk/AnimeCeleb">code</a>
+            <a href="https://github.com/kangyeolk/AnimeCeleb">code</a> |
+            <a href="bib/animeceleb.bib">cite</a>
             <p></p>
           </td>
         </tr>
