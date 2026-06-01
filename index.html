@@ -454,9 +454,15 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
         <!-- PixelHuman -->
-        <tr>
+        <tr class="paper-row" onmouseout="pixelhuman_stop()" onmouseover="pixelhuman_start()">
           <td width="25%">
-            <img src="media/preview.jpg" width="160" height="120" style="border: 1px solid #ddd;">
+            <video id="pixelhuman_vid" width="240" height="120" muted loop preload="auto">
+              <source src="media/teaser_pixelhuman.mp4" type="video/mp4">
+            </video>
+            <script type="text/javascript">
+            function pixelhuman_start() { document.getElementById('pixelhuman_vid').play(); }
+            function pixelhuman_stop() { document.getElementById('pixelhuman_vid').pause(); }
+            </script>
           </td>
           <td valign="middle" width="75%">
               <a href="https://arxiv.org/abs/2307.09070">
